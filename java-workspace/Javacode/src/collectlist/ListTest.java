@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**ArrayList
+/**
  * Author:ywh
- * Date:2019/02/14
+ * Date:2019/02/16
  */
-public class ListDemo {
+public class ListTest {
     public static void main(String[] args) {
         //此时集合只能保存String类型
         List<String> list = new ArrayList<>();
@@ -31,7 +31,5 @@ public class ListDemo {
         Object[] r = list.toArray();
         System.out.println(Arrays.toString(r));
 
-
     }
 }
-
