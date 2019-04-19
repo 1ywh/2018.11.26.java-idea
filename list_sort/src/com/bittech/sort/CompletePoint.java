@@ -5,6 +5,7 @@ package com.bittech.sort;
  * 在一个排序的链表中，存在重复的结点，删除该链表中重复的结点
  * 重复的结点不保留，返回链表头指针。
  * Author:ywh
+ *
  * Date:2019/04/07
  */
 public class CompletePoint {
@@ -31,7 +32,7 @@ public class CompletePoint {
             //方法1
             if (p2.val == p1.val) {
                 //此处一直找到重复的数字
-                while (p2.val == p1.val && p2 != null) {
+                while (p2.val == p1.val ) {
                     p2 = p2.next;
                 }
                 //将重复的数字全部删除
@@ -39,9 +40,7 @@ public class CompletePoint {
                 //更新p1
                 p1 = p2;
                 //更新p2
-                if (p2 != null) {
-                    p2 = p2.next;
-                }
+                p2 = p2.next;
             } else {
                 //当不相等的时候，一直遍历
                 prev = prev.next;
