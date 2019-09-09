@@ -19,7 +19,7 @@ public class Solution {
             map1 = new HashMap<>();
             //先把第一个放进去，当作例子
             if (i == 0) {
-                //算出每个字符存在的数目
+                //算出每个字符  存在的数目
                 for (int j = 0; j < A[i].length(); j++) {
                     int m = map.getOrDefault(A[i].charAt(j), 0);
                     map.put(A[i].charAt(j), m + 1);
