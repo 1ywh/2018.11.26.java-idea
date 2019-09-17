@@ -1,4 +1,4 @@
-﻿package com.bittech.testlinkT;
+package com.bittech.testlinkT;
 
 /**
  * Author:ywh
