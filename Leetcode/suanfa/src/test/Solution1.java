@@ -9,7 +9,7 @@ import java.util.List;
  * @date 2019/9/16 19:50
  * @description
  */
-public class Solution {
+public class Solution1 {
     public static List<List<Integer>> tree(int[] num) {
         List<Integer> list = new ArrayList<>();
         List<List<Integer>> lists = new ArrayList<>();
