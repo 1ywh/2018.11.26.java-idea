@@ -7,12 +7,15 @@ package TestSummary;
  */
 class Parent {
     private String name;
-    //如果不写这个的话，会报错
+
     public Parent(){
         System.out.println("o");
     }
 
     public void test(){
+        System.out.println(1);
+    }
+    public void test1(){
         System.out.println(1);
     }
 }
