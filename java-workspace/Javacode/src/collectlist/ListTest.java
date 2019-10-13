@@ -1,4 +1,4 @@
-﻿package collectlist;
+package collectlist;
 
 import java.util.ArrayList;
 import java.util.Arrays;
