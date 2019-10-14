@@ -3,7 +3,7 @@ package com;
 /**
  * @author ywh
  * @date 2019/10/13 10:21
- * @description 
+ * @description
  */
 public class Main {
     static boolean out(char c){
@@ -17,6 +17,7 @@ public class Main {
             i++;
             out('D');
         }
+        System.out.println("hello".valueOf(2));
     }
 }
 //A
