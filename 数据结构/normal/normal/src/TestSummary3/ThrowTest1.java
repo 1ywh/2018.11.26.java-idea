@@ -3,9 +3,10 @@ package TestSummary3;
 /**
  * @author ywh
  * @date 2019/10/11 22:05
- * @description  final,对象调用属性
+ * @description final, 对象调用属性
  */
 class Final {
+
     public final String color = "bule";
     public String size = "i";
 
@@ -16,18 +17,6 @@ class Final {
         this.size = size;
     }
 }
-//
-//class UserError extends Exception {
-//    public UserError(String message) {
-//        super(message);
-//    }
-//}
-//
-//class PasswordError extends Exception {
-//    public PasswordError(String message) {
-//        super(message);
-//    }
-//}
 
 public class ThrowTest1 {
     private static String userName = "a";
