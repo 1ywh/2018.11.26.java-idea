@@ -32,16 +32,17 @@ class MyThread implements Runnable {
 public class ThreadTest1 {
     public static void main(String[] args) {
         //数据共享一起卖10张票
-//        MyThread myThread = new MyThread();
-//        new Thread(myThread).start();
-//        new Thread(myThread).start();
-//
+        MyThread myThread = new MyThread();
+
+        new Thread(myThread).start();
+        new Thread(myThread).start();
+
 //        Runnable runnable = () -> System.out.println("h");
 //        new Thread(runnable).start();
 
         //变成了卖自己的票
-        MyThread1 myThread=new MyThread1();
-        myThread.start();
-        new MyThread1().start();
+//        MyThread1 myThread=new MyThread1();
+//        myThread.start();
+//        new MyThread1().start();
     }
 }
