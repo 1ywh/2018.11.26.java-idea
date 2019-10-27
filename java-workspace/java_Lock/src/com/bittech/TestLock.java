@@ -1,4 +1,4 @@
-﻿package com.bittech;
+package com.bittech;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
