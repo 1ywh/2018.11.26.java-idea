@@ -13,6 +13,6 @@ class Member{
 }
 public class LoaderClass {
     public static void main(String[] args) throws Exception{
-        System.out.println(Class.forName("Member").getClassLoader().loadClass("Member").newInstance());
+        System.out.println(Class.forName("com.bittech.Member").getClassLoader().loadClass("Member").newInstance());
     }
 }
