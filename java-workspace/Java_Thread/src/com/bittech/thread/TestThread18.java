@@ -22,7 +22,7 @@ public class TestThread18 {
         thread.start();
         System.out.println(Thread.currentThread().getName());
         thread.join();
-        System.out.println("");
+        System.out.println("代码结束");
     }
 
     public static void printTime() {
