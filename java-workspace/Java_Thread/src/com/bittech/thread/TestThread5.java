@@ -30,30 +30,30 @@ class TicketRunnable implements Runnable {
 //    @Override
 //    //1.代码局部用同步块
 //
-//    public void run() {
-//         //同一时刻，只允许一个线程进入代码块处理
-//        //此时输出的有一个10
-//        System.out.println(Thread.currentThread().getPriority());
-//
-//        for (int i = 0; i < 10; i++) {
-//            System.out.println("--------");
-//            //表示为程序逻辑上锁
-//            synchronized (this) {//this->Runnable对象，部分锁定
-//                if (this.ticket > 0) {
-//                    try {
-//                        Thread.sleep(1000);
-//                        System.out.println(Thread.currentThread().getName()
-//                                + "还有" + (this.ticket--) + "张票");
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            }
-//        }
-//        System.out.println(Thread.currentThread().getName() + "卖完了");
-//    }
-//
-//}
+    public void run() {
+         //同一时刻，只允许一个线程进入代码块处理
+        //此时输出的有一个10
+        System.out.println(Thread.currentThread().getPriority());
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("--------");
+            //表示为程序逻辑上锁
+            synchronized (this) {//this->Runnable对象，部分锁定
+                if (this.ticket > 0) {
+                    try {
+                        Thread.sleep(1000);
+                        System.out.println(Thread.currentThread().getName()
+                                + "还有" + (this.ticket--) + "张票");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+        System.out.println(Thread.currentThread().getName() + "卖完了");
+    }
+
+}
 //    @Override
 //    public void run() {
 //  //2. 加了锁只能有一个对象进来，全部锁定,这种方法和上面的结果不同
@@ -106,21 +106,21 @@ class TicketRunnable implements Runnable {
 //}
 //同步方法，进入到方法中的线程可能为多个
 //    6次执行完后在执行下一个黄牛
-    @Override
-    public void run() {
-        for (int i = 0; i < 6; i++) {
-            this.sale();
-        }
-    }
-        public synchronized void sale(){
-            if(this.ticket>0){
-                try{
-                    Thread.sleep(200);
-                }catch(InterruptedException e){
-                    e.printStackTrace();
-                }
-                System.out.println(Thread.currentThread().getName() + ",还有" + this.ticket--
-                        + " 张票");
-            }
-        }
-    }
+//    @Override
+//    public void run() {
+//        for (int i = 0; i < 6; i++) {
+//            this.sale();
+//        }
+//    }
+//        public synchronized void sale(){
+//            if(this.ticket>0){
+//                try{
+//                    Thread.sleep(200);
+//                }catch(InterruptedException e){
+//                    e.printStackTrace();
+//                }
+//                System.out.println(Thread.currentThread().getName() + ",还有" + this.ticket--
+//                        + " 张票");
+//            }
+//        }
+//    }
