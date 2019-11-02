@@ -20,12 +20,10 @@ public class JDBC {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-
         //2.获取连接
         //第一种 ：DriverManager
         //url规范  jdbc:<数据库的名字>：//host:port/<database name>
         //第二种 ；DataSource数据源
-
         String url = "jdbc:mysql://127.0.0.1:3306/java7";
         //都是接口
         Connection connection = null;
@@ -35,13 +33,9 @@ public class JDBC {
             connection = DriverManager.getConnection(url, "root", "199938");
             //3.创建命令
             statement = connection.createStatement();
-
             //4.准备SQL语句,执行
             String sql = "select id,name,balance from account";
             resultSet = statement.executeQuery(sql);
-
-
-
             //5.返回结果,处理结果
             while (resultSet.next()) {
                 //一般不用下标 ,用列名
@@ -50,7 +44,6 @@ public class JDBC {
                 int balance = resultSet.getInt("balance");
                 System.out.println(String.format("id:%d   name:%s    balance:%s", id, name, balance));
             }
-
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
