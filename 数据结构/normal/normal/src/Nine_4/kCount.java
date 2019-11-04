@@ -3,7 +3,7 @@ package Nine_4;
 /**
  * @author ywh
  * @date 2019/9/4 17:39
- * @description
+ * @description 第k层结点的个数
  */
 
 class Node3 {
