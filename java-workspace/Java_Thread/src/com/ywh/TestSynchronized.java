@@ -3,7 +3,14 @@ package com.ywh;
 /**
  * @author ywh
  * @date 2019/10/29 19:13
- * @description 锁对象
+ * @description 锁对象,这样就可以代码块
+ * 一个线程完了才执行另一个线程
+ * begin:Thread-2
+ * over:Thread-2
+ * begin:Thread-1
+ * over:Thread-1
+ * begin:Thread-0
+ * over:Thread-0
  */
 
 class Sync {
@@ -15,7 +22,7 @@ class Sync {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println("over"+Thread.currentThread().getName());
+            System.out.println("over:"+Thread.currentThread().getName());
         }
     }
 }
