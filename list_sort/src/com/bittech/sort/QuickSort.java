@@ -41,7 +41,7 @@ public class QuickSort {
 
     //二、开始遍历通过partition遍历区间将小于等于基准值放在左边，大于等于放在右边
     //1.hover法，左右遍历
-    public static int partition1(int[] arr, int left, int right) {
+    public static int partition1(int[] arr, int left, int right)     {
         int begin = left;
         int end = right;
         //先将基准值选在数组最后一个元素

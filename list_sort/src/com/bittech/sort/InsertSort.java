@@ -64,11 +64,11 @@ public class InsertSort {
                 }
             }
             //pos就是要插入的下标，是>pos-1
-            int pos = left+1;
+            int pos = left-1;
             for (int k = i - 1; k > pos; k--) {
                 arr[k + 1] = arr[k];
             }
-            arr[pos] = key;
+            arr[pos+1] = key;
         }
 
     }
