@@ -42,13 +42,13 @@ public class HeapSort {
             arr[0] = arr[end];
             arr[end] = t;
             //除了0以外都满足堆的性质，所以index=0，每次无序区间都要少一个数字
-            biggest(arr, end - 1, 0);
+            biggest(arr, end, 0);
             end--;
         }
     }
 
     public static void main(String[] args) {
-        int[] a = new int[]{9, 5, 2, 7, 3, 6, 8, 8, 4, 9, 3, 1, 2};
+        int[] a = new int[]{9,99, 5, 2,1, 7, 7,3, 6, 8, 8, 4, 9, 3, 1, 2};
         sort(a);
         for (int i : a) {
             System.out.println(i);
