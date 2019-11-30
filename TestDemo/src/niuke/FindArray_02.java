@@ -3,7 +3,8 @@ package niuke;
 /**
  * @author ywh
  * @date 2019/11/29 16:46
- * @description 输入一个数字，在二维数组中查找看是否有该数字
+ * @description  二维数组中的查找
+ * 输入一个数字，在二维数组中查找看是否有该数字
  */
 public class FindArray_02 {
     public boolean Find(int target, int[][] array) {
