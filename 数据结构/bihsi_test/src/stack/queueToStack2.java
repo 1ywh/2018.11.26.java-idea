@@ -68,7 +68,7 @@ public class queueToStack2 {
         B = temp;
         return ret;
     }
-
+getResourceAsStream
     /**
      * Returns whether the stack is empty.
      */
