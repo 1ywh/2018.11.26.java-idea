@@ -8,7 +8,7 @@ import java.util.Stack;
  * @description 最小栈：https://leetcode-cn.com/problems/min-stack/solution
  */
 public class MinStack1 {
-    //s1表示正常栈，s2表示每一次的最小值，辅助作用
+    //s1表示正常栈，s2表[lo示每一次的最小值，辅助作用
     Stack<Integer> s1 = new Stack<>();
     Stack<Integer> s2 = new Stack<>();
 
