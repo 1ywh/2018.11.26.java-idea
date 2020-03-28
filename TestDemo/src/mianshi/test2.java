@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  * @author ywh
  * @date 2020/3/23 22:35
- * @description  
+ * @description
  */
 public class test2 {
 
